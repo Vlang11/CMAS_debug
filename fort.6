@@ -1,0 +1,768 @@
+#================================================================================#        
+#|                                                                              |#        
+#|               The Community Multiscale Air Quality (CMAQ) Model              |#        
+#|                                   Version 5.5                                |#        
+#|                                                                              |#        
+#|                          Built and Maintained by the                         |#        
+#|                        Office of Research and Development                    |#        
+#|                   United States Environmental Protection Agency              |#        
+#|                                                                              |#        
+#|                            https://www.epa.gov/cmaq                          |#        
+#|                                                                              |#        
+#|       Source Code:   https://www.github.com/USEPA/cmaq/tree/master           |#        
+#|       Documentation: https://www.github.com/USEPA/cmaq/tree/master/DOCS      |#        
+#|                                                                              |#        
+#|         The CMAQ Model is tested and released with cooperation from          |#        
+#|         the Community Modeling and Analysis System (CMAS) Center via         |#        
+#|         contract support. CMAS is managed by the Institute for the           |#        
+#|         Environment, University of North Carolina at Chapel Hill.            |#        
+#|         CMAS URL: (https://www.cmascenter.org)                               |#        
+#|                                                                              |#        
+#================================================================================#        
+
+     
+     >>--->> WARNING in subroutine GET_ENVLIST on PE 102
+     Environment variable CONC_BLEV_ELEV not set
+     
+     
+     >>--->> WARNING in subroutine GET_ENVLIST on PE 102
+     Environment variable PA_BCOL_ECOL not set
+     
+     
+     >>--->> WARNING in subroutine GET_ENVLIST on PE 102
+     Environment variable PA_BROW_EROW not set
+     
+     
+     >>--->> WARNING in subroutine GET_ENVLIST on PE 147
+     Environment variable PA_BLEV_ELEV not set
+     
+
+
+     ========================================
+     |>---   RETRIEVE HORIZONTAL GRID   ---<|
+     ========================================
+
+     File "GRIDDESC" opened for input on unit:  99
+     /projects/b1045/rcs_support/wrf-cmaq/output/Chicago_LADCO/mcip_output/daily/ChicagoLADCO_202301_d02/GRIDDESC
+
+
+
+     ======================================
+     |>---   RETRIEVE VERTICAL GRID   ---<|
+     ======================================
+
+     =========================================
+     |>---   RETRIEVE SPECIES NAMELIST   ---<|
+     =========================================
+     
+
+     |> Add Modal Dimension to CMAQ Aerosol Species:
+     +================================================
+     
+     Added an Aitken Mode for Aerosol Species ASO4I
+     Added an Accumulation Mode for Aerosol Species ASO4J
+     Added a Coarse Mode for Aerosol Species ASO4K
+     Added an Aitken Mode for Aerosol Species ANH4I
+     Added an Accumulation Mode for Aerosol Species ANH4J
+     Added a Coarse Mode for Aerosol Species ANH4K
+     Added an Aitken Mode for Aerosol Species ANO3I
+     Added an Accumulation Mode for Aerosol Species ANO3J
+     Added a Coarse Mode for Aerosol Species ANO3K
+     Added an Aitken Mode for Aerosol Species ANAI
+     Added an Accumulation Mode for Aerosol Species ANAJ
+     Added an Aitken Mode for Aerosol Species ACLI
+     Added an Accumulation Mode for Aerosol Species ACLJ
+     Added a Coarse Mode for Aerosol Species ACLK
+     Added an Accumulation Mode for Aerosol Species AISO1J
+     Added an Accumulation Mode for Aerosol Species AISO2J
+     Added an Accumulation Mode for Aerosol Species ASQTJ
+     Added an Accumulation Mode for Aerosol Species AORGCJ
+     Added an Aitken Mode for Aerosol Species AECI
+     Added an Accumulation Mode for Aerosol Species AECJ
+     Added an Aitken Mode for Aerosol Species AOTHRI
+     Added an Accumulation Mode for Aerosol Species AOTHRJ
+     Added an Accumulation Mode for Aerosol Species AFEJ
+     Added an Accumulation Mode for Aerosol Species AALJ
+     Added an Accumulation Mode for Aerosol Species ASIJ
+     Added an Accumulation Mode for Aerosol Species ATIJ
+     Added an Accumulation Mode for Aerosol Species ACAJ
+     Added an Accumulation Mode for Aerosol Species AMGJ
+     Added an Accumulation Mode for Aerosol Species AKJ
+     Added an Accumulation Mode for Aerosol Species AMNJ
+     Added a Coarse Mode for Aerosol Species ACORS
+     Added a Coarse Mode for Aerosol Species ASOIL
+     Added an Aitken Mode for Aerosol Species NUMATKN
+     Added an Accumulation Mode for Aerosol Species NUMACC
+     Added a Coarse Mode for Aerosol Species NUMCOR
+     Added an Aitken Mode for Aerosol Species SRFATKN
+     Added an Accumulation Mode for Aerosol Species SRFACC
+     Added a Coarse Mode for Aerosol Species SRFCOR
+     Added an Accumulation Mode for Aerosol Species AORGH2OJ
+     Added an Aitken Mode for Aerosol Species AH2OI
+     Added an Accumulation Mode for Aerosol Species AH2OJ
+     Added a Coarse Mode for Aerosol Species AH2OK
+     Added an Aitken Mode for Aerosol Species AH3OPI
+     Added an Accumulation Mode for Aerosol Species AH3OPJ
+     Added a Coarse Mode for Aerosol Species AH3OPK
+     Added a Coarse Mode for Aerosol Species ASEACAT
+     Added an Accumulation Mode for Aerosol Species AISO3J
+     Added an Accumulation Mode for Aerosol Species AOLGAJ
+     Added an Accumulation Mode for Aerosol Species AOLGBJ
+     Added an Accumulation Mode for Aerosol Species AGLYJ
+     Added an Accumulation Mode for Aerosol Species AMTNO3J
+     Added an Accumulation Mode for Aerosol Species AMTHYDJ
+     Added an Aitken Mode for Aerosol Species APOCI
+     Added an Accumulation Mode for Aerosol Species APOCJ
+     Added an Aitken Mode for Aerosol Species APNCOMI
+     Added an Accumulation Mode for Aerosol Species APNCOMJ
+     Added an Accumulation Mode for Aerosol Species APCSOJ
+     Added an Aitken Mode for Aerosol Species ALVPO1I
+     Added an Accumulation Mode for Aerosol Species ALVPO1J
+     Added an Aitken Mode for Aerosol Species ASVPO1I
+     Added an Accumulation Mode for Aerosol Species ASVPO1J
+     Added an Aitken Mode for Aerosol Species ASVPO2I
+     Added an Accumulation Mode for Aerosol Species ASVPO2J
+     Added an Accumulation Mode for Aerosol Species ASVPO3J
+     Added an Accumulation Mode for Aerosol Species AIVPO1J
+     Added an Aitken Mode for Aerosol Species ALVOO1I
+     Added an Accumulation Mode for Aerosol Species ALVOO1J
+     Added an Aitken Mode for Aerosol Species ALVOO2I
+     Added an Accumulation Mode for Aerosol Species ALVOO2J
+     Added an Aitken Mode for Aerosol Species ASVOO1I
+     Added an Accumulation Mode for Aerosol Species ASVOO1J
+     Added an Aitken Mode for Aerosol Species ASVOO2I
+     Added an Accumulation Mode for Aerosol Species ASVOO2J
+     Added an Accumulation Mode for Aerosol Species ASVOO3J
+     Added an Accumulation Mode for Aerosol Species AAVB1J
+     Added an Accumulation Mode for Aerosol Species AAVB2J
+     Added an Accumulation Mode for Aerosol Species AAVB3J
+     Added an Accumulation Mode for Aerosol Species AAVB4J
+     Added an Accumulation Mode for Aerosol Species AMT1J
+     Added an Accumulation Mode for Aerosol Species AMT2J
+     Added an Accumulation Mode for Aerosol Species AMT3J
+     Added an Accumulation Mode for Aerosol Species AMT4J
+     Added an Accumulation Mode for Aerosol Species AMT5J
+     Added an Accumulation Mode for Aerosol Species AMT6J
+     
+     Total number of aerosol species:  84
+     
+
+     |> Map Aerosol Species:
+     +========================
+  
+  
+     Optional Species APHGJ Not found in AE namelist.                                
+
+
+     ===========================================
+     |>---   INITIALIZE PROCESS ANALYSIS   ---<|
+     ===========================================
+     PA_DATAGEN: Process Analysis is not activated
+
+
+     ==================================
+     |>---   CONFIGURE SCENARIO   ---<|
+     ==================================
+
+     |> Reading Family Definitions from Control File:
+     +=================================================
+     
+
+     ========================================
+     |>---   OPENING CMAQ INPUT FILES   ---<|
+     ========================================
+     INIT_MEDC_1     :/projects/b1045/rcs_support/wrf-cmaq/WRF_DIR/work_dir/WRFv451_CMAQv55/CCTM/scripts/WRFCMAQ-BASE_202301_D02-sw_feedback/CCTM_MEDIA_CONC_4.5.155_BASE_202301_D02_20221231.nc
+     
+     >>--->> WARNING in subroutine OPEN3
+     File not available.
+     
+     LUFRAC_CRO      :LUFRAC_CRO
+     
+     >>--->> WARNING in subroutine OPEN3
+     File not available.
+     
+     
+     >>--->> WARNING in subroutine gridded_files_se on PE 021
+     Could not open LUFRAC_CRO       file
+     
+     Solution: Reading Land Use Fractions from GRID_CRO_2D file
+     
+
+     |> Reading Emission Control Namelist:
+     +======================================
+     
+     Performing Basic Error Checks for Emission Scaling Rules
+GR_EM_SYM_DATE_001     |          F
+     Value for IOAPI_CHECK_HEADERS:  N returning FALSE
+      
+     "GR_EMIS_001" opened as OLD:READ-ONLY   
+     File name "/projects/b1045/rcs_support/wrf-cmaq/WRF_DIR/work_dir/WRFv451_CMAQv55/data/202301_baseline_d02/emis/emis_mole_all_20230101_ChicagoLADCO_d02_nobeis_withrwc_2022hc_cb6_22m.ncf"
+     File type GRDDED3 
+     Execution ID "????????????????"
+     Grid name "ChicagoLADCO_d02"
+     Dimensions: 408 rows, 432 cols, 1 lays, 72 vbles
+     NetCDF ID:     65536  opened as READONLY            
+     Starting date and time  2023001:000000 (0:00:00   Jan. 1, 2023)
+     Timestep                          010000 (1:00:00 hh:mm:ss)
+     Maximum current record number        25
+      
+     "INIT_CONC_1" opened as OLD:READ-ONLY   
+     File name "/projects/b1045/rcs_support/wrf-cmaq/WRF_DIR/work_dir/WRFv451_CMAQv55/CCTM/scripts/WRFCMAQ-BASE_202301_D02-sw_feedback/CCTM_CGRID_4.5.155_BASE_202301_D02_20221231.nc"
+     File type GRDDED3 
+     Execution ID "????????????????"
+     Grid name "ChicagoLADCO_d02"
+     Dimensions: 408 rows, 432 cols, 35 lays, 223 vbles
+     NetCDF ID:    131072  opened as READONLY            
+     Starting date and time  2023001:000000 (0:00:00   Jan. 1, 2023)
+     Timestep                          010000 (1:00:00 hh:mm:ss)
+     Maximum current record number         1
+     Number of Emissions Layers:          35
+     out of total Number of Model Layers: 35
+      
+     "BNDY_CONC_1" opened as OLD:READ-ONLY   
+     File name "/projects/b1045/rcs_support/wrf-cmaq/WRF_DIR/work_dir/WRFv451_CMAQv55/data/202301_baseline_d02/icbc/BCON.20230101.4CHICAGOD2.base2023_rxeqemis.12US1CMAQ55.ncf"
+     File type BNDARY3 
+     Execution ID "BCON_v54.exe"
+     Grid name "4CHICAGOD2"
+     Dimensions: 408 rows, 432 cols, 35 lays, 224 vbles, 1 cells thick
+     NetCDF ID:    196608  opened as READONLY            
+     Starting date and time  2023001:000000 (0:00:00   Jan. 1, 2023)
+     Timestep                          010000 (1:00:00 hh:mm:ss)
+     Maximum current record number        25
+      
+     "STK_GRPS_001" opened as OLD:READ-ONLY   
+     File name "/projects/b1045/rcs_support/wrf-cmaq/WRF_DIR/work_dir/WRFv451_CMAQv55/data/202301_baseline_d02/emis/stack_groups_ptnonipm_ChicagoLADCO_d02_2022hc_cb6_22m.ncf"
+     File type GRDDED3 
+     Execution ID "????????????????"
+     Grid name "ChicagoLADCO_d02"
+     Dimensions: 207353 rows, 1 cols, 1 lays, 16 vbles
+     NetCDF ID:    262144  opened as READONLY            
+     Starting date and time  2023001:000000 (0:00:00   Jan. 1, 2023)
+     Timestep                          010000 (1:00:00 hh:mm:ss)
+     Maximum current record number         1
+      
+     "STK_GRPS_002" opened as OLD:READ-ONLY   
+     File name "/projects/b1045/rcs_support/wrf-cmaq/WRF_DIR/work_dir/WRFv451_CMAQv55/data/202301_baseline_d02/emis/stack_groups_ptegu_ChicagoLADCO_d02_2022hc_cb6_22m.ncf"
+     File type GRDDED3 
+     Execution ID "????????????????"
+     Grid name "ChicagoLADCO_d02"
+     Dimensions: 2783 rows, 1 cols, 1 lays, 16 vbles
+     NetCDF ID:    327680  opened as READONLY            
+     Starting date and time  2023001:000000 (0:00:00   Jan. 1, 2023)
+     Timestep                          010000 (1:00:00 hh:mm:ss)
+     Maximum current record number         1
+      
+     "STK_GRPS_003" opened as OLD:READ-ONLY   
+     File name "/projects/b1045/rcs_support/wrf-cmaq/WRF_DIR/work_dir/WRFv451_CMAQv55/data/202301_baseline_d02/emis/stack_groups_ptagfire_20230101_ChicagoLADCO_d02_2022hc_cb6_22m.ncf"
+     File type GRDDED3 
+     Execution ID "????????????????"
+     Grid name "ChicagoLADCO_d02"
+     Dimensions: 7 rows, 1 cols, 1 lays, 17 vbles
+     NetCDF ID:    393216  opened as READONLY            
+     Starting date and time  2023001:000000 (0:00:00   Jan. 1, 2023)
+     Timestep                          010000 (1:00:00 hh:mm:ss)
+     Maximum current record number         1
+      
+     "STK_GRPS_004" opened as OLD:READ-ONLY   
+     File name "/projects/b1045/rcs_support/wrf-cmaq/WRF_DIR/work_dir/WRFv451_CMAQv55/data/202301_baseline_d02/emis/stack_groups_ptfire-rx_20230101_ChicagoLADCO_d02_2022hc_cb6_22m.ncf"
+     File type GRDDED3 
+     Execution ID "????????????????"
+     Grid name "ChicagoLADCO_d02"
+     Dimensions: 82 rows, 1 cols, 1 lays, 17 vbles
+     NetCDF ID:    458752  opened as READONLY            
+     Starting date and time  2023001:000000 (0:00:00   Jan. 1, 2023)
+     Timestep                          010000 (1:00:00 hh:mm:ss)
+     Maximum current record number         1
+      
+     "STK_GRPS_005" opened as OLD:READ-ONLY   
+     File name "/projects/b1045/rcs_support/wrf-cmaq/WRF_DIR/work_dir/WRFv451_CMAQv55/data/202301_baseline_d02/emis/stack_groups_ptfire_othna_20230101_ChicagoLADCO_d02_2022hc_cb6_22m.ncf"
+     File type GRDDED3 
+     Execution ID "????????????????"
+     Grid name "ChicagoLADCO_d02"
+     Dimensions: 2 rows, 1 cols, 1 lays, 17 vbles
+     NetCDF ID:    524288  opened as READONLY            
+     Starting date and time  2023001:000000 (0:00:00   Jan. 1, 2023)
+     Timestep                          010000 (1:00:00 hh:mm:ss)
+     Maximum current record number         1
+      
+     "STK_GRPS_006" opened as OLD:READ-ONLY   
+     File name "/projects/b1045/rcs_support/wrf-cmaq/WRF_DIR/work_dir/WRFv451_CMAQv55/data/202301_baseline_d02/emis/stack_groups_pt_oilgas_ChicagoLADCO_d02_2022hc_cb6_22m.ncf"
+     File type GRDDED3 
+     Execution ID "????????????????"
+     Grid name "ChicagoLADCO_d02"
+     Dimensions: 11561 rows, 1 cols, 1 lays, 16 vbles
+     NetCDF ID:    589824  opened as READONLY            
+     Starting date and time  2023001:000000 (0:00:00   Jan. 1, 2023)
+     Timestep                          010000 (1:00:00 hh:mm:ss)
+     Maximum current record number         1
+      
+     "STK_GRPS_007" opened as OLD:READ-ONLY   
+     File name "/projects/b1045/rcs_support/wrf-cmaq/WRF_DIR/work_dir/WRFv451_CMAQv55/data/202301_baseline_d02/emis/stack_groups_cmv_c3_12_ChicagoLADCO_d02_2022hc_cb6_22m.ncf"
+     File type GRDDED3 
+     Execution ID "????????????????"
+     Grid name "ChicagoLADCO_d02"
+     Dimensions: 13830 rows, 1 cols, 1 lays, 16 vbles
+     NetCDF ID:    655360  opened as READONLY            
+     Starting date and time  2023001:000000 (0:00:00   Jan. 1, 2023)
+     Timestep                          010000 (1:00:00 hh:mm:ss)
+     Maximum current record number         1
+      
+     "STK_GRPS_008" opened as OLD:READ-ONLY   
+     File name "/projects/b1045/rcs_support/wrf-cmaq/WRF_DIR/work_dir/WRFv451_CMAQv55/data/202301_baseline_d02/emis/stack_groups_cmv_c1c2_12_ChicagoLADCO_d02_2022hc_cb6_22m.ncf"
+     File type GRDDED3 
+     Execution ID "????????????????"
+     Grid name "ChicagoLADCO_d02"
+     Dimensions: 39908 rows, 1 cols, 1 lays, 16 vbles
+     NetCDF ID:    720896  opened as READONLY            
+     Starting date and time  2023001:000000 (0:00:00   Jan. 1, 2023)
+     Timestep                          010000 (1:00:00 hh:mm:ss)
+     Maximum current record number         1
+     Number of Point Sources from   1 equals     351
+     Number of Point Sources from   2 equals       4
+     Number of Point Sources from   3 equals       0
+     Number of Point Sources from   4 equals       0
+     Number of Point Sources from   5 equals       0
+     Number of Point Sources from   6 equals      83
+     Number of Point Sources from   7 equals     558
+     Number of Point Sources from   8 equals    1156
+     Number of Total Point Sources on this sub-domain equals    2152
+     
+     Note: Large numbers of point sources (e.g. > 100,000 on any sub-domain          
+       processor) will cause noticeable runtime penalties. Users are advised to        
+       limit the maximum number of point sources on any sub-domain to below this       
+       threshold.
+      
+     "STK_EMIS_001" opened as OLD:READ-ONLY   
+     File name "/projects/b1045/rcs_support/wrf-cmaq/WRF_DIR/work_dir/WRFv451_CMAQv55/data/202301_baseline_d02/emis/inln_mole_ptnonipm_20230101_ChicagoLADCO_d02_cmaq_cb6ae7_2022hc_cb6_22m.ncf"
+     File type GRDDED3 
+     Execution ID "????????????????"
+     Grid name "CHICAGOLADCO_D02"
+     Dimensions: 207353 rows, 1 cols, 1 lays, 69 vbles
+     NetCDF ID:    786432  opened as READONLY            
+     Starting date and time  2023001:000000 (0:00:00   Jan. 1, 2023)
+     Timestep                          010000 (1:00:00 hh:mm:ss)
+     Maximum current record number        25
+STK_EM_SYM_DATE_001    |          T
+      
+     "STK_EMIS_002" opened as OLD:READ-ONLY   
+     File name "/projects/b1045/rcs_support/wrf-cmaq/WRF_DIR/work_dir/WRFv451_CMAQv55/data/202301_baseline_d02/emis/inln_mole_ptegu_20230101_ChicagoLADCO_d02_cmaq_cb6ae7_2022hc_cb6_22m.ncf"
+     File type GRDDED3 
+     Execution ID "????????????????"
+     Grid name "CHICAGOLADCO_D02"
+     Dimensions: 2783 rows, 1 cols, 1 lays, 69 vbles
+     NetCDF ID:    851968  opened as READONLY            
+     Starting date and time  2023001:000000 (0:00:00   Jan. 1, 2023)
+     Timestep                          010000 (1:00:00 hh:mm:ss)
+     Maximum current record number        25
+STK_EM_SYM_DATE_002    |          F
+      
+     "STK_EMIS_003" opened as OLD:READ-ONLY   
+     File name "/projects/b1045/rcs_support/wrf-cmaq/WRF_DIR/work_dir/WRFv451_CMAQv55/data/202301_baseline_d02/emis/inln_mole_ptagfire_20230101_ChicagoLADCO_d02_cmaq_cb6ae7_2022hc_cb6_22m.ncf"
+     File type GRDDED3 
+     Execution ID "????????????????"
+     Grid name "CHICAGOLADCO_D02"
+     Dimensions: 7 rows, 1 cols, 1 lays, 67 vbles
+     NetCDF ID:    917504  opened as READONLY            
+     Starting date and time  2023001:000000 (0:00:00   Jan. 1, 2023)
+     Timestep                          010000 (1:00:00 hh:mm:ss)
+     Maximum current record number        25
+STK_EM_SYM_DATE_003    |          F
+      
+     "STK_EMIS_004" opened as OLD:READ-ONLY   
+     File name "/projects/b1045/rcs_support/wrf-cmaq/WRF_DIR/work_dir/WRFv451_CMAQv55/data/202301_baseline_d02/emis/inln_mole_ptfire-rx_20230101_ChicagoLADCO_d02_cmaq_cb6ae7_2022hc_cb6_22m.ncf"
+     File type GRDDED3 
+     Execution ID "????????????????"
+     Grid name "CHICAGOLADCO_D02"
+     Dimensions: 38 rows, 1 cols, 1 lays, 68 vbles
+     NetCDF ID:    983040  opened as READONLY            
+     Starting date and time  2023001:000000 (0:00:00   Jan. 1, 2023)
+     Timestep                          010000 (1:00:00 hh:mm:ss)
+     Maximum current record number        25
+STK_EM_SYM_DATE_004    |          F
+      
+     "STK_EMIS_005" opened as OLD:READ-ONLY   
+     File name "/projects/b1045/rcs_support/wrf-cmaq/WRF_DIR/work_dir/WRFv451_CMAQv55/data/202301_baseline_d02/emis/inln_mole_ptfire_othna_20230101_ChicagoLADCO_d02_cmaq_cb6ae7_2022hc_cb6_22m.ncf"
+     File type GRDDED3 
+     Execution ID "????????????????"
+     Grid name "CHICAGOLADCO_D02"
+     Dimensions: 2 rows, 1 cols, 1 lays, 67 vbles
+     NetCDF ID:   1048576  opened as READONLY            
+     Starting date and time  2023001:000000 (0:00:00   Jan. 1, 2023)
+     Timestep                          010000 (1:00:00 hh:mm:ss)
+     Maximum current record number        25
+STK_EM_SYM_DATE_005    |          F
+      
+     "STK_EMIS_006" opened as OLD:READ-ONLY   
+     File name "/projects/b1045/rcs_support/wrf-cmaq/WRF_DIR/work_dir/WRFv451_CMAQv55/data/202301_baseline_d02/emis/inln_mole_pt_oilgas_20230101_ChicagoLADCO_d02_cmaq_cb6ae7_2022hc_cb6_22m.ncf"
+     File type GRDDED3 
+     Execution ID "????????????????"
+     Grid name "CHICAGOLADCO_D02"
+     Dimensions: 11561 rows, 1 cols, 1 lays, 69 vbles
+     NetCDF ID:   1114112  opened as READONLY            
+     Starting date and time  2023001:000000 (0:00:00   Jan. 1, 2023)
+     Timestep                          010000 (1:00:00 hh:mm:ss)
+     Maximum current record number        25
+STK_EM_SYM_DATE_006    |          T
+      
+     "STK_EMIS_007" opened as OLD:READ-ONLY   
+     File name "/projects/b1045/rcs_support/wrf-cmaq/WRF_DIR/work_dir/WRFv451_CMAQv55/data/202301_baseline_d02/emis/inln_mole_cmv_c3_12_20230101_ChicagoLADCO_d02_cmaq_cb6ae7_2022hc_cb6_22m.ncf"
+     File type GRDDED3 
+     Execution ID "????????????????"
+     Grid name "CHICAGOLADCO_D02"
+     Dimensions: 13830 rows, 1 cols, 1 lays, 66 vbles
+     NetCDF ID:   1179648  opened as READONLY            
+     Starting date and time  2023001:000000 (0:00:00   Jan. 1, 2023)
+     Timestep                          010000 (1:00:00 hh:mm:ss)
+     Maximum current record number        25
+STK_EM_SYM_DATE_007    |          F
+      
+     "STK_EMIS_008" opened as OLD:READ-ONLY   
+     File name "/projects/b1045/rcs_support/wrf-cmaq/WRF_DIR/work_dir/WRFv451_CMAQv55/data/202301_baseline_d02/emis/inln_mole_cmv_c1c2_12_20230101_ChicagoLADCO_d02_cmaq_cb6ae7_2022hc_cb6_22m.ncf"
+     File type GRDDED3 
+     Execution ID "????????????????"
+     Grid name "CHICAGOLADCO_D02"
+     Dimensions: 39908 rows, 1 cols, 1 lays, 66 vbles
+     NetCDF ID:   1245184  opened as READONLY            
+     Starting date and time  2023001:000000 (0:00:00   Jan. 1, 2023)
+     Timestep                          010000 (1:00:00 hh:mm:ss)
+     Maximum current record number        25
+STK_EM_SYM_DATE_008    |          F
+      
+     "BEIS_NORM_EMIS" opened as OLD:READ-ONLY   
+     File name "/projects/b1045/rcs_support/wrf-cmaq/WRF_DIR/work_dir/WRFv451_CMAQv55/data/202301_baseline_d02/surface/beis4_beld6_norm_emis_ChicagoLADCO_d02_windowed.ncf"
+     File type GRDDED3 
+     Execution ID "????????????????"
+     Grid name "ChicagoLADCO_d02"
+     Dimensions: 408 rows, 432 cols, 1 lays, 77 vbles
+     NetCDF ID:   1310720  opened as READONLY            
+     Time-independent data.
+  
+     Land use scheme is NLCD40
+     n_lucat,n_dlcat:           40           6
+     desert land categories ------------------------
+     LUFRAC_06 Closed Shrublands
+     LUFRAC_07 Open Shrublands
+     LUFRAC_27 Barren Land (Rock-Sand-Clay)
+     LUFRAC_31 Dwarf Scrub
+     LUFRAC_32 Shrub-Scrub
+     LUFRAC_16 Barren or Sparsely Vegetated
+     land use categories ---------------------------
+     LUFRAC_01 Evergreen Needleleaf Forest
+     LUFRAC_02 Evergreen Broadleaf Forest
+     LUFRAC_03 Deciduous Needleleaf Forest
+     LUFRAC_04 Deciduous Broadleaf Forest
+     LUFRAC_05 Mixed Forests
+     LUFRAC_06 Closed Shrublands
+     LUFRAC_07 Open Shrublands
+     LUFRAC_08 Woody Savannas
+     LUFRAC_09 Savannas
+     LUFRAC_10 Grasslands
+     LUFRAC_11 Permanent Wetlands
+     LUFRAC_12 Croplands
+     LUFRAC_13 Urban and Built Up
+     LUFRAC_14 Cropland-Natural Vegetation Mosaic
+     LUFRAC_15 Permanent Snow and Ice
+     LUFRAC_16 Barren or Sparsely Vegetated
+     LUFRAC_17 IGBP Water
+     LUFRAC_18 unclassified
+     LUFRAC_19 fill value
+     LUFRAC_20 unclassified
+     LUFRAC_21 Open Water
+     LUFRAC_22 Perennial Ice-Snow
+     LUFRAC_23 Developed Open Space
+     LUFRAC_24 Developed Low Intensity
+     LUFRAC_25 Developed Medium Intensity
+     LUFRAC_26 Developed High Intensity
+     LUFRAC_27 Barren Land (Rock-Sand-Clay)
+     LUFRAC_28 Deciduous Forest
+     LUFRAC_29 Evergreen Forest
+     LUFRAC_30 Mixed Forest
+     LUFRAC_31 Dwarf Scrub
+     LUFRAC_32 Shrub-Scrub
+     LUFRAC_33 Grassland-Herbaceous
+     LUFRAC_34 Sedge-Herbaceous
+     LUFRAC_35 Lichens
+     LUFRAC_36 Moss
+     LUFRAC_37 Pasture-Hay
+     LUFRAC_38 Cultivated Crops
+     LUFRAC_39 Woody Wetlands
+     LUFRAC_40 Emergent Herbaceous Wetlands
+  
+      
+     "OCEAN_1" opened as OLD:READ-ONLY   
+     File name "/projects/b1045/rcs_support/wrf-cmaq/WRF_DIR/work_dir/WRFv451_CMAQv55/data/202301_baseline_d02/surface/OCEAN_12_L3m_MC_CHL_chlor_ChicagoLADCO_d02_windowed_from_12US1.ncf3"
+     File type GRDDED3 
+     Execution ID "????????????????"
+     Grid name "ChicagoLADCO_d02"
+     Dimensions: 408 rows, 432 cols, 1 lays, 6 vbles
+     NetCDF ID:   1376256  opened as READONLY            
+     Time-independent data.
+      
+     "LTNGPARMS_FILE" opened as OLD:READ-ONLY   
+     File name "/projects/b1045/rcs_support/wrf-cmaq/WRF_DIR/work_dir/WRFv451_CMAQv55/data/202301_baseline_d02/emis/lightning/LTNG_AllParms_ChicagoLADCO_d02_20230708_windowed_from_12US1.ncf"
+     File type GRDDED3 
+     Execution ID "????????????????"
+     Grid name "ChicagoLADCO_d02"
+     Dimensions: 408 rows, 432 cols, 1 lays, 9 vbles
+     NetCDF ID:   1441792  opened as READONLY            
+     Time-independent data.
+      
+     "BEIS_SOILINP" opened as OLD:READ-ONLY   
+     File name "/projects/b1045/rcs_support/wrf-cmaq/WRF_DIR/work_dir/WRFv451_CMAQv55/CCTM/scripts/WRFCMAQ-BASE_202301_D02-sw_feedback/CCTM_BSOILOUT_4.5.155_BASE_202301_D02_20221231.nc"
+     File type GRDDED3 
+     Execution ID "????????????????"
+     Grid name "ChicagoLADCO_d02"
+     Dimensions: 408 rows, 432 cols, 1 lays, 27 vbles
+     NetCDF ID:   1507328  opened as READONLY            
+     Time-independent data.
+
+     =======================================
+     |>---   LOAD INITIAL CONDITIONS   ---<|
+     =======================================
+
+     Initial Condition Factors used for transported gas-phase (reactive) species
+       1  NO2                1.0000    
+       2  NO                 1.0000    
+       3  O                  1.0000    
+       4  O3                 1.0000    
+       5  NO3                1.0000    
+       6  O1D                1.0000    
+       7  OH                 1.0000    
+       8  HO2                1.0000    
+       9  H2O2               1.0000    
+      10  N2O5               1.0000    
+      11  HNO3               1.0000    
+      12  HONO               1.0000    
+      13  PNA                1.0000    
+      14  SO2                1.0000    
+      15  SULF               1.0000    
+      16  SULRXN             1.0000    
+      17  C2O3               1.0000    
+      18  MEO2               1.0000    
+      19  RO2                1.0000    
+      20  PAN                1.0000    
+      21  PACD               1.0000    
+      22  AACD               1.0000    
+      23  CXO3               1.0000    
+      24  ALD2               1.0000    
+      25  XO2H               1.0000    
+      26  PANX               1.0000    
+      27  FORM               1.0000    
+      28  MEPX               1.0000    
+      29  MEOH               1.0000    
+      30  ROOH               1.0000    
+      31  XO2                1.0000    
+      32  XO2N               1.0000    
+      33  XPAR               1.0000    
+      34  XPRP               1.0000    
+      35  NTR1               1.0000    
+      36  NTR2               1.0000    
+      37  FACD               1.0000    
+      38  CO                 1.0000    
+      39  HCO3               1.0000    
+      40  ALDX               1.0000    
+      41  GLYD               1.0000    
+      42  GLY                1.0000    
+      43  MGLY               1.0000    
+      44  ETHA               1.0000    
+      45  ETOH               1.0000    
+      46  KET                1.0000    
+      47  PAR                1.0000    
+      48  ACET               1.0000    
+      49  PRPA               1.0000    
+      50  ROR                1.0000    
+      51  ETHY               1.0000    
+      52  ETH                1.0000    
+      53  OLE                1.0000    
+      54  IOLE               1.0000    
+      55  ISOP               1.0000    
+      56  ISO2               1.0000    
+      57  ISOPRXN            1.0000    
+      58  ISPD               1.0000    
+      59  INTR               1.0000    
+      60  ISPX               1.0000    
+      61  HPLD               1.0000    
+      62  OPO3               1.0000    
+      63  EPOX               1.0000    
+      64  IEPOXP             1.0000    
+      65  EPX2               1.0000    
+      66  TERP               1.0000    
+      67  APIN               1.0000    
+      68  TERPNRO2           1.0000    
+      69  MTNO3              1.0000    
+      70  TRPRXN             1.0000    
+      71  BENZENE            1.0000    
+      72  CRES               1.0000    
+      73  BZO2               1.0000    
+      74  OPEN               1.0000    
+      75  BENZRO2            1.0000    
+      76  TOL                1.0000    
+      77  TO2                1.0000    
+      78  TOLRO2             1.0000    
+      79  XOPN               1.0000    
+      80  XYLMN              1.0000    
+      81  XLO2               1.0000    
+      82  XYLRO2             1.0000    
+      83  NAPH               1.0000    
+      84  PAHRO2             1.0000    
+      85  CRO                1.0000    
+      86  CAT1               1.0000    
+      87  CRON               1.0000    
+      88  OPAN               1.0000    
+      89  ECH4               1.0000    
+      90  CL2                1.0000    
+      91  CL                 1.0000    
+      92  HOCL               1.0000    
+      93  CLO                1.0000    
+      94  FMCL               1.0000    
+      95  HCL                1.0000    
+      96  CLNO2              1.0000    
+      97  CLNO3              1.0000    
+      98  SESQ               1.0000    
+      99  SESQRXN            1.0000    
+     100  SOAALK             1.0000    
+     101  H2NO3PIJ           1.0000    
+     102  H2NO3PK            1.0000    
+     103  VLVPO1             1.0000    
+     104  VSVPO1             1.0000    
+     105  VSVPO2             1.0000    
+     106  VSVPO3             1.0000    
+     107  VIVPO1             1.0000    
+     108  VLVOO1             1.0000    
+     109  VLVOO2             1.0000    
+     110  VSVOO1             1.0000    
+     111  VSVOO2             1.0000    
+     112  VSVOO3             1.0000    
+     113  PCVOC              1.0000    
+     114  PCSOARXN           1.0000    
+     115  FORM_PRIMARY       1.0000    
+     116  ALD2_PRIMARY       1.0000    
+     117  BUTADIENE13        1.0000    
+     118  ACROLEIN           1.0000    
+     119  ACRO_PRIMARY       1.0000    
+     120  TOLU               1.0000    
+     121  HG                 1.0000    
+     122  HGIIAER            1.0000    
+     123  HGIIGAS            1.0000    
+     124  SVAVB1             1.0000    
+     125  SVAVB2             1.0000    
+     126  SVAVB3             1.0000    
+     127  SVAVB4             1.0000    
+  
+     WARNING: Domain extents different from model for MET_CRO_3D      
+ >>  GL_NCOLS:          432   NCOLS3D:           46
+  
+     WARNING: Domain extents different from model for MET_CRO_3D      
+ >>  GL_NROWS:          408   NROWS3D:           22
+
+     Initial Condition Factors used for transported aerosol species
+     129  ASO4I              1.0000    
+     130  ASO4J              1.0000    
+     131  ASO4K              1.0000    
+     132  ANH4I              1.0000    
+     133  ANH4J              1.0000    
+     134  ANH4K              1.0000    
+     135  ANO3I              1.0000    
+     136  ANO3J              1.0000    
+     137  ANO3K              1.0000    
+     138  ANAI               1.0000    
+     139  ANAJ               1.0000    
+     140  ACLI               1.0000    
+     141  ACLJ               1.0000    
+     142  ACLK               1.0000    
+     143  AISO1J             1.0000    
+     144  AISO2J             1.0000    
+     145  ASQTJ              1.0000    
+     146  AORGCJ             1.0000    
+     147  AECI               1.0000    
+     148  AECJ               1.0000    
+     149  AOTHRI             1.0000    
+     150  AOTHRJ             1.0000    
+     151  AFEJ               1.0000    
+     152  AALJ               1.0000    
+     153  ASIJ               1.0000    
+     154  ATIJ               1.0000    
+     155  ACAJ               1.0000    
+     156  AMGJ               1.0000    
+     157  AKJ                1.0000    
+     158  AMNJ               1.0000    
+     159  ACORS              1.0000    
+     160  ASOIL              1.0000    
+     161  NUMATKN            1.0000    
+     162  NUMACC             1.0000    
+     163  NUMCOR             1.0000    
+     164  SRFATKN            1.0000    
+     165  SRFACC             1.0000    
+     166  SRFCOR             1.0000    
+     167  AORGH2OJ           1.0000    
+     168  AH2OI              1.0000    
+     169  AH2OJ              1.0000    
+     170  AH2OK              1.0000    
+     171  AH3OPI             1.0000    
+     172  AH3OPJ             1.0000    
+     173  AH3OPK             1.0000    
+     174  ASEACAT            1.0000    
+     175  AISO3J             1.0000    
+     176  AOLGAJ             1.0000    
+     177  AOLGBJ             1.0000    
+     178  AGLYJ              1.0000    
+     179  AMTNO3J            1.0000    
+     180  AMTHYDJ            1.0000    
+     181  APOCI              1.0000    
+     182  APOCJ              1.0000    
+     183  APNCOMI            1.0000    
+     184  APNCOMJ            1.0000    
+     185  APCSOJ             1.0000    
+     186  ALVPO1I            1.0000    
+     187  ALVPO1J            1.0000    
+     188  ASVPO1I            1.0000    
+     189  ASVPO1J            1.0000    
+     190  ASVPO2I            1.0000    
+     191  ASVPO2J            1.0000    
+     192  ASVPO3J            1.0000    
+     193  AIVPO1J            1.0000    
+     194  ALVOO1I            1.0000    
+     195  ALVOO1J            1.0000    
+     196  ALVOO2I            1.0000    
+     197  ALVOO2J            1.0000    
+     198  ASVOO1I            1.0000    
+     199  ASVOO1J            1.0000    
+     200  ASVOO2I            1.0000    
+     201  ASVOO2J            1.0000    
+     202  ASVOO3J            1.0000    
+     203  AAVB1J             1.0000    
+     204  AAVB2J             1.0000    
+     205  AAVB3J             1.0000    
+     206  AAVB4J             1.0000    
+     207  AMT1J              1.0000    
+     208  AMT2J              1.0000    
+     209  AMT3J              1.0000    
+     210  AMT4J              1.0000    
+     211  AMT5J              1.0000    
+     212  AMT6J              1.0000    
+
+     |> Check Aerosol IC Size Distributions:
+     +========================================
+
+     Initial Condition Factors used for transported non-reactive gas species
+     213  NH3                1.0000    
+     214  SVISO1             1.0000    
+     215  SVISO2             1.0000    
+     216  SVSQT              1.0000    
+     217  LVPCSOG            1.0000    
+     218  SVMT1              1.0000    
+     219  SVMT2              1.0000    
+     220  SVMT3              1.0000    
+     221  SVMT4              1.0000    
+     222  SVMT5              1.0000    
+     223  SVMT6              1.0000    
+
+     =================================================
+     |>---   OPEN OR CREATE CONCENTRATION FILE   ---<|
+     =================================================
+     CTM_CONC_1      :/projects/b1045/rcs_support/wrf-cmaq/WRF_DIR/work_dir/WRFv451_CMAQv55/CCTM/scripts/WRFCMAQ-BASE_202301_D02-sw_feedback/CCTM_CONC_4.5.155_BASE_202301_D02_20230101.nc
+     
+     >>--->> WARNING in subroutine OPEN3
+     File not available.
+     
+     Could not open CTM_CONC_1 for update - try to open new
