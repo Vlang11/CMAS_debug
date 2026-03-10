@@ -1,0 +1,14 @@
+module list
+
+Currently Loaded Modules:
+  1) gcc-runtime/9.1.0-gcc-9.1.0    10) hwloc/2.9.1-gcc-9.1.0
+  2) lz4/1.9.4-gcc-9.1.0            11) libevent/2.1.12-gcc-9.1.0
+  3) snappy/1.1.10-gcc-9.1.0        12) numactl/2.0.14-gcc-9.1.0
+  4) c-blosc/1.21.5-gcc-9.1.0       13) openssh/7.4p1-gcc-9.1.0
+  5) libjpeg-turbo/3.0.0-gcc-9.1.0  14) ucx/1.13.0-gcc-9.1.0
+  6) krb5/1.20.1-gcc-9.1.0          15) mpi/openmpi-4.1.6-gcc-9.1.0
+  7) libtirpc/1.3.3-gcc-9.1.0       16) hdf5/1.10.5-openmpi-gcc-9.1.0
+  8) hdf/4.2.15-gcc-9.1.0           17) gcc/9.1.0-gcc-4.8.5
+  9) libaec/1.0.6-gcc-9.1.0         18) WRF-CMAQ/v5.5-openmpi-gcc-9.1.0
+
+
